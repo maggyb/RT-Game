@@ -1,0 +1,74 @@
+
+html, body {
+	background-color: #E43012;
+	margin: 0;
+	height: 100%;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+.iconButton {
+	background-color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	border: solid;
+	border-color: white;
+	height: 30px;
+	margin: 0px 10px 0px 0px;
+	color: red;
+	font-size: 17pt;
+}
+
+.restorationIcon {
+	height: 17pt;
+	width: 20pt;
+	cursor: pointer;
+}
+.iconButton:hover {
+	background-color: pink;
+	border-color: pink;
+}
+
+.textButton {
+	font-size: 8.5pt;
+	background-color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	color: red;
+	padding: 7.5px;
+}
+
+.splashscreen_content {
+	color: white;
+}
+
+.stickyFooter{
+	margin: -55px 15px 15px 15px;
+}
+.splashscreen_container {
+	min-height: 100%;
+}
+.splashscreen_content {
+	padding: 20px;
+	padding-bottom: 50px;
+}
+
+.text-white {
+	color: white;
+}
+
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.border-rounded {
+	border-radius: 10px;
+}

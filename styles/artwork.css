@@ -1,0 +1,25 @@
+.artwork {
+	height: auto;
+	width: 100%;
+	max-width: 915px;
+}
+.artwork_container {
+	position: relative;
+	padding: 0 20px;
+}
+.hotspot {
+	width:100px;
+	height:100px;
+	position: absolute;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.hotspot:hover {
+	background-color: rgba(255,255,255,0.2);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}

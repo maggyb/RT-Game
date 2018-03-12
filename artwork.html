@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Starry Night by Van Gogh</title>
+		<!-- responsive meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--linking the style sheet-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" href=styles/button.css>
+		<link rel="stylesheet" href=styles/modal.css>
+		<link rel="stylesheet" href=styles/artwork.css>
+		<link rel="stylesheet" href=styles/header.css>
+	</head>
+
+	<body>
+		<div class="header text-white bg-red">
+			<h1 class="header_text">Starry Night by Van Gogh</h1>
+		</div>  
+		<br>
+		<div class="artwork_container align-center">
+			<!--Image-->
+			<img src="media/images/starry-night-2.jpg" usemap="#map" class="artwork">
+			<a onclick="openModal()">
+				<div class="hotspot" style="top: 3%; left: 21.5%;"></div>
+			</a>
+			<a onclick="openModal2()">
+				<div class="hotspot" style="top: 43%; left: 31%;"></div>
+			</a>
+		</div>	
+
+		<div class="align-center w3-row-padding">
+			<div class="w3-half w3-col"> 
+				<a href="photoGallery.html">
+					<div class="button">
+						<p class="information">
+							Back to Gallery
+						</p>
+					</div>
+				</a>
+			</div>
+			<div class="w3-half w3-col">
+				<a href="feedbackPage.html">
+					<div class="button">
+						<p class="information">
+							Give feedback
+						</p>
+					</div>
+				</a>
+		</div>
+		
+
+		 <!-- Here are the modals for this page -->
+		<div id="myModal" class="modal">
+			<!--Modal Container-->
+			<div class="modal_container">
+				<!--Modal Header-->
+				<div class="align-center text-white modal_header">
+					<!--When user clicks X it closes the modal-->
+					<span class="modal_close" onclick="closeModal()">&times;</span>
+					<p>Starry night By Van Gogh</p>
+				</div>
+				<!--Modal Body-->
+				<div class="modal_body align-center">
+					<img src="media/images/sky.jpg" class="modal_image">
+					<p>
+						Painted in 1889 during his stay at asylum, is now known as the most recgozined art, for its stunning beauty. Simply a magnificent piece of art.
+					</p>
+				</div>
+				<!--Modal Footer-->
+				<div class="align-center text-white modal_footer">
+					<p>Van Gogh(1853-1890)</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="myModal2" class="modal">
+			<!--modal content-->
+			<div class="modal_container">
+				<!--Modal Header-->
+				<div class="align-center text-white modal_header">
+					<!--When user clicks X it closes the modal-->
+					<span class="modal_close" onclick="closeModal2()">&times;</span>
+					<p>Van Gogh's health</p>
+				</div>
+				<!--Modal Body-->
+				<div class="modal_body align-center">
+					<img src="media/images/van.jpg" class="modal_image">
+					<p>Van Gogh sufferd from temporal lobe epilepsy.</p>
+				</div>
+				<!--Modal Footer-->
+				<div class="align-center text-white modal_footer">
+					<p>Van Gogh(1853-1890)</p>
+				</div>	
+			</div>
+		</div>
+
+		<script src="scripts/artwork.js"></script>
+	</body>
+</html>

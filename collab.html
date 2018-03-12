@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Collaboration</title>
+		<!-- responsive meta tag -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="stylesheet" type="text/css" href="styles/button.css">
+		<link rel="stylesheet" type="text/css" href="styles/collab.css">
+		<link rel="stylesheet" type="text/css" href="styles/header.css">
+	</head>
+	<body>
+		<div class="header text-white bg-red">
+			<h1 class="header_text">Collaborative Feedback</h1>
+		</div>
+		<div class="align-center">
+			<canvas id="testCanvas" width="1200px" height="600px"></canvas>
+			<img class="collab_art" id="art" src="media/images/starry-night-2.jpg"></img>
+			<audio id="testAudio">
+				<source src="media/audio/testAudio.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="checkAudio">
+				<source src="media/audio/checkAudio.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="assessAudio">
+				<source src="media/audio/assessAudio.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="markAudio">
+				<source src="media/audio/markAudio.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+
+		<div class="align-center">
+			<div class="button" onclick="goBack()">
+				<p class="information">
+					Go back
+				</p>
+			</div>
+		</div>
+		
+		<script src="scripts/collab.js"></script>
+	</body>
+</html>

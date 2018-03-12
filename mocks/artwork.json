@@ -1,0 +1,16 @@
+{
+   "artworks": [ 
+        {
+            "id": 1,
+            "name": "artworks 1",
+            "slug": "artwork-1",
+            "imageUrl": "https://placeimg.com/640/480/animals"
+        },
+        {
+            "id": 2,
+            "name": "artworks 2",
+            "slug": "artwork-2",
+            "imageUrl": "https://placeimg.com/640/490/animals"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+//
+// Color system
+//
+
+$brand-primary: #E43012;
+$white: #fff;
+$black: #333;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:       $white !default;
+$body-color:    $gray-900 !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:            theme-color("primary") !default;
+$link-decoration:       none !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+$link-hover-decoration-color: theme-color("primary") !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-base:       $font-family-sans-serif !default;
+$font-size-base: 1.125rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background and border color.
+
+$input-btn-padding-y:       .5rem !default;
+$input-btn-padding-x:       .75rem !default;
+$input-btn-line-height:     1.25 !default;
+$btn-font-weight:                $font-weight-normal !default;
+$btn-box-shadow:                 inset 0 1px 0 rgba($white,.15), 0 1px 1px rgba($black,.075) !default;
+$btn-focus-box-shadow:           0 0 0 3px rgba(theme-color("primary"), .25) !default;
+$btn-active-box-shadow:          inset 0 3px 5px rgba($black,.125) !default;
+
+$btn-link-disabled-color:        $gray-600 !default;
+
+$btn-block-spacing-y:            .5rem !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:              $border-radius !default;
+$btn-border-radius-lg:           $border-radius-lg !default;
+$btn-border-radius-sm:           $border-radius-sm !default;
+
+$btn-transition:                 background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         15px !default;
+
+$modal-dialog-margin:         10px !default;
+$modal-dialog-margin-y-sm-up: 30px !default;
+
+$modal-title-line-height:     $line-height-base !default;
+
+$modal-content-bg:               $white !default;
+$modal-content-border-color:     rgba($black,.2) !default;
+$modal-content-border-width:     $border-width !default;
+$modal-content-box-shadow-xs:    0 3px 9px rgba($black,.5) !default;
+$modal-content-box-shadow-sm-up: 0 5px 15px rgba($black,.5) !default;
+
+$modal-backdrop-bg:           $black !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   $gray-200 !default;
+$modal-footer-border-color:   $modal-header-border-color !default;
+$modal-header-border-width:   $modal-content-border-width !default;
+$modal-footer-border-width:   $modal-header-border-width !default;
+$modal-header-padding:        15px !default;
+
+$modal-lg:                    800px !default;
+$modal-md:                    500px !default;
+$modal-sm:                    300px !default;
+
+$modal-transition:            transform .3s ease-out !default;

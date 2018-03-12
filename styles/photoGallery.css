@@ -1,0 +1,20 @@
+.gallery{
+    text-align: center;
+}
+.image{
+    height: 320px;
+    width: 320px;
+    border:3px solid white;
+}
+.image:hover {
+    border:3px solid #E43012;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+.holder{
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback</title>
+
+        <!-- responsive meta tag -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="styles\styles.css">
+        <link rel="stylesheet" type="text/css" href="styles\button.css">
+        <link rel="stylesheet" type="text/css" href="styles\wordcloud.css">
+        <link rel="stylesheet" type="text/css" href="styles\header.css">
+    </head>
+    <body>
+        <div class="header text-white bg-red">
+            <h1 class="header_text">Feedback</h1>
+        </div>
+        <div class="content"> 
+            <p class="information align-center">
+                To give feedback on an image, all you need to do is enter you feedback into the textbox below,
+                or click the microphone button and say your feedback. When you have
+                finished speaking, you can click on the microphone again and 
+                your speech will be transformed into text.
+            </p>
+        </div>
+
+        <div class="w3-row">
+            <div class="w3-half w3-container w3-center">
+                <span id="microphone" onClick="toggleSpeech(event)"><img class="MicImg" src="media/images/microphone.svg"></span>
+            </div>
+            <div class="w3-half w3-container">
+                <textarea id="inputWords" class="TextBox" rows="10" placeholder="Please enter your text here"></textarea>
+            </div>
+        </div>
+
+        <br>
+        <!--<div class="FeedbackButton" onclick="submit()">
+            <p class="information">
+                Submit
+            </p>
+        </div>-->
+        <div class="w3-row">
+            <div class="w3-third w3-col w3-container padding-right">
+                <div class="button" onClick="getText()">
+                    <p class="information">
+                        Create Word Cloud
+                    </p>
+                </div>
+            </div> 
+            <div class="w3-third w3-col w3-container padding-right padding-left">
+                <a class="button" href="collab.html">
+                    <p class="information">
+                        Collaborative Picture
+                    </p>
+                </a>
+            </div>
+            <div class="w3-third w3-col w3-container padding-left">
+                <a class="button" href="artwork.html">
+                    <p class="information">
+                        Return to artwork
+                    </p>
+                </a>
+            </div>
+        </div>
+    
+        <div class="wordcloud_container" id="wordcloudContainer">
+            <a href="javascript:void(0)" onclick="closeWordcloud()">
+                <img class="wordcloud_close" src="media/images/close.svg"/>
+            </a>
+            <div class="wordcloud_content" id="wordcloud"></div>
+        </div>
+
+        <script src="scripts/d3.min.js"></script>
+		<script src="scripts/build/d3.layout.cloud.js"></script>
+		<script src="scripts/wordcloud.js"></script>
+		<script src="scripts/speechControl.js"></script>
+        <!-- <script src="..\js\submitButton.js"></script> -->
+    
+    </body>
+</html>
